@@ -1,20 +1,33 @@
-import * as React from 'react';
-import { createRoot } from 'react-dom/client';
-import CssBaseline from '@mui/material/CssBaseline';
-import { ThemeProvider } from '@mui/material/styles';
-import App from './App';
-import theme from './theme';
+import * as React from "react";
+import App from "./App";
+import theme from "./theme";
+import CssBaseline from "@mui/material/CssBaseline";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createRoot } from "react-dom/client";
+import { ThemeProvider } from "@mui/material/styles";
+import { Dashboard } from "./pages/dashboard";
+import { Registers } from "./pages/registers";
+import { Patients } from "./pages/patients";
+import { RegisterRequest } from "./pages/register-request";
+import { Requests } from "./pages/requests";
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-      <CssBaseline />
-      <App />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />}>
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="cadastros" element={<Registers />} />
+            <Route path="pacientes" element={<Patients />} />
+            <Route path="criar-solicitacao" element={<RegisterRequest />} />
+            <Route path="solicitacoes" element={<Requests />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
-    ,
   </React.StrictMode>,
 );
