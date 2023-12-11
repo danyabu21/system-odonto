@@ -5,6 +5,7 @@ import RegisterProtocol from "./RegisterProtocol";
 import ChartRequests from "./ChartRequests";
 import ChartInvoicing from "./ChartInvoicing";
 import PendingRequest from "./PendingRequest";
+import Navbar from "./Navbar";
 
 export {
   Sidebar,
@@ -14,4 +15,5 @@ export {
   ChartRequests,
   PendingRequest,
   ChartInvoicing,
+  Navbar,
 };

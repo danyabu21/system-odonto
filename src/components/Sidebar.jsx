@@ -12,6 +12,7 @@ import List from "@mui/material/List";
 import CssBaseline from "@mui/material/CssBaseline";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
+import MedicalInformationIcon from "@mui/icons-material/MedicalInformation";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
@@ -24,6 +25,14 @@ import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import HomeIcon from "@mui/icons-material/Home";
 import Tooltip from "@mui/material/Tooltip";
+import InputBase from "@mui/material/InputBase";
+import Badge from "@mui/material/Badge";
+import MenuItem from "@mui/material/MenuItem";
+import Menu from "@mui/material/Menu";
+import SearchIcon from "@mui/icons-material/Search";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import MoreIcon from "@mui/icons-material/MoreVert";
 
 const drawerWidth = 280;
 
@@ -61,7 +70,7 @@ const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
 })(({ theme, open }) => ({
   zIndex: theme.zIndex.drawer + 1,
-  background: "#008137",
+  background: "#0077b6",
   transition: theme.transitions.create(["width", "margin"], {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
@@ -143,13 +152,14 @@ const Sidebar = () => {
             noWrap
             component="h1"
           >
-            SM - Tratamentos Quimioterápicos
+            SMCMO - Odontologia
           </Typography>
         </Toolbar>
       </AppBar>
+
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>
-          <S.Logo src="https://noacaruaru.com.br/wp-content/uploads/2023/07/logo-noa-01.png" />
+          <MedicalInformationIcon />
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "rtl" ? (
               <ChevronRightIcon />

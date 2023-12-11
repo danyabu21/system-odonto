@@ -8,7 +8,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { Dashboard } from "./pages/dashboard";
 import { Registers } from "./pages/registers";
 import { Patients } from "./pages/patients";
-import { RegisterRequest } from "./pages/register-request";
+import { Schedule } from "./pages/schedule";
 import { Requests } from "./pages/requests";
 
 const rootElement = document.getElementById("root");
@@ -23,7 +23,7 @@ root.render(
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="cadastros" element={<Registers />} />
             <Route path="pacientes" element={<Patients />} />
-            <Route path="criar-solicitacao" element={<RegisterRequest />} />
+            <Route path="agenda" element={<Schedule />} />
             <Route path="solicitacoes" element={<Requests />} />
           </Route>
         </Routes>
