@@ -10,6 +10,8 @@ import { Registers } from "./pages/registers";
 import { Patients } from "./pages/patients";
 import { Schedule } from "./pages/schedule";
 import { Requests } from "./pages/requests";
+import { Stockpile } from "./pages/stockpile";
+import { Team } from "./pages/team";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -25,6 +27,8 @@ root.render(
             <Route path="pacientes" element={<Patients />} />
             <Route path="agenda" element={<Schedule />} />
             <Route path="solicitacoes" element={<Requests />} />
+            <Route path="estoque" element={<Stockpile />} />
+            <Route path="equipe" element={<Team />} />
           </Route>
         </Routes>
       </BrowserRouter>

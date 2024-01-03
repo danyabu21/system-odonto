@@ -3,6 +3,8 @@ import GroupsIcon from "@mui/icons-material/Groups";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
+import CategoryIcon from "@mui/icons-material/Category";
+import MasksIcon from "@mui/icons-material/Masks";
 
 export const listItems = [
   {
@@ -26,14 +28,14 @@ export const listItems = [
   },
   {
     id: 3,
-    icon: <ListAltIcon />,
-    label: "Solicitações",
-    route: "solicitacoes",
+    icon: <MasksIcon />,
+    label: "Equipe",
+    route: "equipe",
   },
   {
     id: 4,
-    icon: <AppRegistrationIcon />,
-    label: "Cadastros",
-    route: "cadastros",
+    icon: <CategoryIcon />,
+    label: "Estoque",
+    route: "estoque",
   },
 ];

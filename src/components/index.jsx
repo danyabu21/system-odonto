@@ -6,6 +6,8 @@ import ChartRequests from "./ChartRequests";
 import ChartInvoicing from "./ChartInvoicing";
 import PendingRequest from "./PendingRequest";
 import Navbar from "./Navbar";
+import NewProductModal from "./NewProductModal";
+import CustomSnackbar from "./CustomSnackbar";
 
 export {
   Sidebar,
@@ -16,4 +18,6 @@ export {
   PendingRequest,
   ChartInvoicing,
   Navbar,
+  NewProductModal,
+  CustomSnackbar,
 };

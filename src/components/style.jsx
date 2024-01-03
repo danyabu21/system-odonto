@@ -49,6 +49,48 @@ export const RegisterPatient = styled.form.attrs(({ $sidebar }) => $sidebar)`
   }
 `;
 
+export const RegisterTeam = styled.form.attrs(({ $sidebar }) => $sidebar)`
+  transition: all 0.3s;
+  padding-left: 0px;
+
+  .container {
+    display: grid;
+    gap: 0.5rem;
+    align-items: end;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 0.5rem;
+
+    &:first-child {
+      margin-bottom: 1rem;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 732px) {
+      &:first-child {
+        margin-bottom: 0.5rem;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 0rem;
+      }
+    }
+
+    .submit-button {
+      width: 250px;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 732px) {
+      .submit-button {
+        width: 100%;
+      }
+    }
+  }
+`;
+
 export const Box = styled.div`
   display: flex;
   align-items: center;

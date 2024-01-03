@@ -1,7 +1,7 @@
 import * as S from "./style";
 
-const RegisterProtocol = () => {
-  return <S.Protocol>Cadastrar Protocolo</S.Protocol>;
+const RegisterUser = () => {
+  return <S.Protocol>Cadastrar Usuário</S.Protocol>;
 };
 
-export default RegisterProtocol;
+export default RegisterUser;
